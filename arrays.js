@@ -23,20 +23,20 @@ function accessElementInArray() {
   console.log(array[3]);
 }
 
-function removeElementFromBeginningOfArray(array) {
-  return array.slice(0);
+function removeElementFromBeginningOfArray(array, element) {
+  return array.slice(element);
 }
 
-function destructivelyRemoveElementFromBeginningOfArray(array) {
-  array.shift();
+function destructivelyRemoveElementFromBeginningOfArray(array, element) {
+  array.shift(element);
   return array;
 }
 
-function removeElementFromEndOfArray(array) {
-  return array.slice();
+function removeElementFromEndOfArray(array, element) {
+  return array.slice(element);
 }
 
-function destructivelyRemoveElementFromEndOfArray(array) {
+function destructivelyRemoveElementFromEndOfArray(array, element) {
   array.pop(element);
   return array;
 }
