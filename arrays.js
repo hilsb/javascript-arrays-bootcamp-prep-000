@@ -5,15 +5,12 @@ function addElementToBeginningOfArray(array, element) {
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-
   array.unshift(element);
   return array;
 }
 
-function addElementToEndOfArray() {
-  var array = [ 1 ];
-  array = [ ...array, 'foo' ];
-  return array;
+function addElementToEndOfArray(array, element) {
+  return [ ...array, element ];
 }
 
 function destructivelyAddElementToEndOfArray() {
