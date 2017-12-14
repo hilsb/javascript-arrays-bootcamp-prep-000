@@ -18,16 +18,16 @@ function destructivelyAddElementToEndOfArray(array, element) {
   return array;
 }
 
-function accessElementInArray() {
-  var array = [ array, array1, array2, array3 ];
-  console.log(array[3]);
+function accessElementInArray(array, index) {
+  var array = [ element ];
+  console.log(array[element]);
 }
 
-function removeElementFromBeginningOfArray(element, array) {
+function removeElementFromBeginningOfArray(array, element) {
   return array.slice(element);
 }
 
-function destructivelyRemoveElementFromBeginningOfArray(element, array) {
+function destructivelyRemoveElementFromBeginningOfArray(array, element) {
   array.shift(element);
   return array;
 }
