@@ -23,8 +23,7 @@ function accessElementInArray() {
   console.log(array[3]);
 }
 
-function removeElementFromBeginningOfArray() {
-  var array = [ 'foo', 1 ];
+function removeElementFromBeginningOfArray(array, element) {
   array.slice(0);
   return array;
 }
@@ -41,8 +40,8 @@ function removeElementFromEndOfArray() {
   return array;
 }
 
-function destructivelyRemoveElementFromEndOfArray() {
+function destructivelyRemoveElementFromEndOfArray(array, element) {
   var array = [ 1, 2, 3 ];
-  array.pop(2);
+  array.pop();
   return array;
 }
